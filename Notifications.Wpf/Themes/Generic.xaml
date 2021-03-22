@@ -4,10 +4,18 @@
                     xmlns:system="clr-namespace:System;assembly=mscorlib"
                     xmlns:wpf="clr-namespace:Notifications.Wpf">
 
-    <Path x:Key="ErrorIcon" Data="M 2.6874995 2.8246546e-7 -4.7683716e-7 2.6855503 5.3007795 7.9863303 -4.7683716e-7 13.28516 2.6874995 15.97266 l 5.29883 -5.30079 5.3007805 5.30079 2.68554 -2.6875 -5.29882 -5.2988297 5.29882 -5.30078 L 13.28711 2.8246546e-7 7.9863295 5.2988303 2.6874995 2.8246546e-7 Z" Fill="White" x:Shared="False"/>
-    <Path x:Key="SuccessIcon" Data="M 15.56055 5.9323048e-7 7.53125 10.197261 2.73242 5.2304706 0 7.8710906 7.82422 15.968751 18.54492 2.3515606 15.56055 5.9323048e-7 Z" Fill="White" x:Shared="False"/>
-    <Path x:Key="InfoIcon" Data="M 10.968748 8.9809305e-8 C 4.9320181 8.9809305e-8 -1.9073487e-6 4.9320201 -1.9073487e-6 10.96875 c 0 6.03672 4.9322600073487 10.9668 10.9687499073487 10.9668 6.03648 0 10.96875 -4.93008 10.96875 -10.9668 C 21.937498 4.9320201 17.005458 8.9809305e-8 10.968748 8.9809305e-8 Z m 0 2.000000010190695 c 4.95043 0 8.96875 4.0183 8.96875 8.9687499 0 4.95044 -4.01809 8.9668 -8.96875 8.9668 -4.9506899 0 -8.9687499 -4.01636 -8.9687499 -8.9668 0 -4.9504499 4.0183 -8.9687499 8.9687499 -8.9687499 z m -1.4999999 2.49805 0 3 2.9999999 0 0 -3 -2.9999999 0 z m 0 4.4707 0 8.9101599 2.9999999 0 0 -8.9101599 -2.9999999 0 z" Fill="White" x:Shared="False"/>
-    <Path x:Key="WarningIcon" Data="M 12.414089 4.6396565e-7 C 12.128679 -9.5360343e-6 11.832699 0.06810046 11.574249 0.19726046 c -0.29252 0.14627 -0.55012 0.39584 -0.70899 0.67383 l -0.002 0.002 L 0.22067905 19.77348 l -0.0117 0.0234 C 0.08326905 20.04831 -9.5367432e-7 20.33976 -9.5367432e-7 20.64844 c 0 0.30629 0.0851000036743 0.62597 0.23633000367432 0.89063 0.13469 0.2357 0.31957 0.44504 0.5332 0.60937 l 0.0137 0.0117 0.0156 0.01 C 1.076789 22.36867 1.440719 22.48654 1.785149 22.48654 l 21.28516 0 c 0.3398 0 0.70907 -0.12364 0.98828 -0.33398 0.2208 -0.16158 0.42089 -0.3689 0.56055 -0.61328 0.15122 -0.26466 0.23633 -0.58434 0.23633 -0.89063 0 -0.30868 -0.0852 -0.60013 -0.21094 -0.85156 l -0.01 -0.0234 -10.66992 -18.90038954 -0.002 -0.002 c -0.15887 -0.27808 -0.41633 -0.52756 -0.70899 -0.67383 -0.25845 -0.12918 -0.55443 -0.19726999603 -0.83984 -0.19725999603 z m 0 2.19531003603435 10.32617 18.2910095 -20.625 0 10.29883 -18.2910095 z m -1.48633 3.84765 0 8.9121095 3 0 0 -8.9121095 -3 0 z m 0 10.3808595 0 3 3 0 0 -3 -3 0 z" Fill="White" x:Shared="False"/>
+    <Path x:Key="SuccessIcon" 
+          Data="M8.35,3C9.53,2.83 10.78,4.12 11.14,5.9C11.5,7.67 10.85,9.25 9.67,9.43C8.5,9.61 7.24,8.32 6.87,6.54C6.5,4.77 7.17,3.19 8.35,3M15.5,3C16.69,3.19 17.35,4.77 17,6.54C16.62,8.32 15.37,9.61 14.19,9.43C13,9.25 12.35,7.67 12.72,5.9C13.08,4.12 14.33,2.83 15.5,3M3,7.6C4.14,7.11 5.69,8 6.5,9.55C7.26,11.13 7,12.79 5.87,13.28C4.74,13.77 3.2,12.89 2.41,11.32C1.62,9.75 1.9,8.08 3,7.6M21,7.6C22.1,8.08 22.38,9.75 21.59,11.32C20.8,12.89 19.26,13.77 18.13,13.28C17,12.79 16.74,11.13 17.5,9.55C18.31,8 19.86,7.11 21,7.6M19.33,18.38C19.37,19.32 18.65,20.36 17.79,20.75C16,21.57 13.88,19.87 11.89,19.87C9.9,19.87 7.76,21.64 6,20.75C5,20.26 4.31,18.96 4.44,17.88C4.62,16.39 6.41,15.59 7.47,14.5C8.88,13.09 9.88,10.44 11.89,10.44C13.89,10.44 14.95,13.05 16.3,14.5C17.41,15.72 19.26,16.75 19.33,18.38Z"
+          Fill="White" x:Shared="False"/>
+    <Path x:Key="InfoIcon" 
+          Data="M18.62,1.5C18.11,1.5 17.6,1.69 17.21,2.09L10.75,8.55L14.95,12.74L21.41,6.29C22.2,5.5 22.2,4.24 21.41,3.46L20.04,2.09C19.65,1.69 19.14,1.5 18.62,1.5M9.8,9.5L3.23,16.07L3.93,16.77C3.4,17.24 2.89,17.78 2.38,18.29C1.6,19.08 1.6,20.34 2.38,21.12C3.16,21.9 4.42,21.9 5.21,21.12C5.72,20.63 6.25,20.08 6.73,19.58L7.43,20.27L14,13.7"
+          Fill="White" x:Shared="False"/>
+    <Path x:Key="WarningIcon" 
+          Data="M12,2L1,21H23M12,6L19.53,19H4.47M11,10V14H13V10M11,16V18H13V16" 
+          Fill="White" x:Shared="False"/>
+    <Path x:Key="ErrorIcon" 
+          Data="M2.2,16.06L3.88,12L2.2,7.94L6.26,6.26L7.94,2.2L12,3.88L16.06,2.2L17.74,6.26L21.8,7.94L20.12,12L21.8,16.06L17.74,17.74L16.06,21.8L12,20.12L7.94,21.8L6.26,17.74L2.2,16.06M4.81,9L6.05,12L4.81,15L7.79,16.21L9,19.19L12,17.95L15,19.19L16.21,16.21L19.19,15L17.95,12L19.19,9L16.21,7.79L15,4.81L12,6.05L9,4.81L7.79,7.79L4.81,9M11,15H13V17H11V15M11,7H13V13H11V7"
+          Fill="White" x:Shared="False"/>
 
     <Style TargetType="Button" x:Key="CloseButtonStyle">
         <Setter Property="Template">
@@ -47,17 +55,17 @@
                     </Grid>
                 </Border>
                 <DataTemplate.Triggers>
-                    <DataTrigger Binding="{Binding Type}" Value="Information">
-                        <Setter TargetName="Icon" Property="Content" Value="{StaticResource InfoIcon}"/>
-                        <Setter TargetName="Border" Property="Background" Value="CornflowerBlue"/>
-                    </DataTrigger>
                     <DataTrigger Binding="{Binding Type}" Value="Success">
                         <Setter TargetName="Icon" Property="Content" Value="{StaticResource SuccessIcon}"/>
-                        <Setter TargetName="Border" Property="Background" Value="LimeGreen"/>
+                        <Setter TargetName="Border" Property="Background" Value="RoyalBlue"/>
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding Type}" Value="Information">
+                        <Setter TargetName="Icon" Property="Content" Value="{StaticResource InfoIcon}"/>
+                        <Setter TargetName="Border" Property="Background" Value="MediumSlateBlue"/>
                     </DataTrigger>
                     <DataTrigger Binding="{Binding Type}" Value="Warning">
                         <Setter TargetName="Icon" Property="Content" Value="{StaticResource WarningIcon}"/>
-                        <Setter TargetName="Border" Property="Background" Value="Orange"/>
+                        <Setter TargetName="Border" Property="Background" Value="DarkOrange"/>
                     </DataTrigger>
                     <DataTrigger Binding="{Binding Type}" Value="Error">
                         <Setter TargetName="Icon" Property="Content" Value="{StaticResource ErrorIcon}"/>
@@ -99,7 +107,7 @@
             </EventTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    
+
     <Style TargetType="{x:Type controls:Notification}">
         <!--<Setter Property="Height" Value="100"/>-->
         <Setter Property="UseLayoutRounding" Value="True"/>
@@ -121,7 +129,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
+
     <Style TargetType="{x:Type controls:NotificationArea}">
         <Setter Property="Margin" Value="0,0,8,8"/>
         <Setter Property="Template">
@@ -152,5 +160,5 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
+
 </ResourceDictionary>
